@@ -10,6 +10,9 @@ export default createRouter({
   history: createWebHashHistory(),
   // pages
   // https://google.com
+  scrollBehavior() {
+    return { top: 0 }
+  },
   routes: [
     {
       path: '/',
